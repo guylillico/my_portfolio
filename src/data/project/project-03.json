@@ -1,0 +1,23 @@
+{
+  "id": "project-03",
+  "title": "Black Bag and Badge",
+  "category": "Development",
+  "client": "Arloko Corp",
+  "imgesBY": "Draxler",
+  "year": "2009 - 2019",
+  "featured_image": "./images/project-03.jpg",
+  "is_featured": true,
+  "body": [
+    "Aussies were developed on ranches in the western United States, and were seen as early as the 1800s. These pups are very focused, and need lots of attention, pawsitive reinforcement, and exercise. They can still be found working on the ranch, but also work as guide dogs, therapy dogs, drug detectors, and of course, man's best friend. People often seek them out for their incredibly strong hunting abilities. They are excellent swimmers, too, so a nice lake or pool is A-OK! However, they do require regular exercise and would fit best with an active family."
+  ],
+  "features": [
+    {
+      "id": "feature-1",
+      "image": "./images/project-02.jpg"
+    },
+    {
+      "id": "feature-2",
+      "image": "./images/project-03.jpg"
+    }
+  ]
+}

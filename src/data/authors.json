@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Rainbow",
+    "image": "./images/blog/author-1.jpg",
+    "social": {
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com",
+      "linkedin": "https://linkedin.com",
+      "youtube": "https://youtube.com"
+    },
+    "tagline": "Content Writter based on USA.",
+    "bio": "I love to work with fun, also like watching movies and a food addicted person. I am a Web Developer with 5 years of experience. I have damn creative idea's at Front end design and Back end too"
+  },
+  {
+    "name": "Bram",
+    "image": "./images/blog/Bram_tarifa.jpg",
+    "social": {
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com/NewNetNinja",
+      "instagram": "https://instagram.com",
+      "linkedin": "https://linkedin.com",
+      "youtube": "https://youtube.com"
+    },
+    "tagline": "Founder of New Net Ninja",
+    "bio": "Here to demystify WEB3 and the Metaverse"
+  },
+  {
+    "name": "Ekipa",
+    "image": "./images/blog/author-1.jpg",
+    "social": {
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com",
+      "linkedin": "https://linkedin.com",
+      "youtube": "https://youtube.com"
+    },
+    "tagline": "Content Writter based on USA.",
+    "bio": "I love to work with fun, also like watching movies and a food addicted person. I am a Web Developer with 5 years of experience. I have damn creative idea's at Front end design and Back end too"
+  },
+  {
+    "name": "Fatima",
+    "image": "./images/blog/author-1.jpg",
+    "social": {
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com",
+      "linkedin": "https://linkedin.com",
+      "youtube": "https://youtube.com"
+    },
+    "tagline": "Content Writter based on USA.",
+    "bio": "I love to work with fun, also like watching movies and a food addicted person. I am a Web Developer with 5 years of experience. I have damn creative idea's at Front end design and Back end too"
+  }
+]

@@ -1,0 +1,31 @@
+/*----------------
+ * Section Title
+--------------------*/
+
+.section-title {
+  .subtitle {
+    display: block;
+    color: var(--color-primary);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 0;
+    line-height: 1.4;
+    @media #{$sm-layout} {
+      font-size: 28px;
+    }
+  }
+  .description {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #333;
+  }
+}

@@ -1,0 +1,70 @@
+/*----------------------
+    Service Style  
+-----------------------*/
+
+.service-style-1 {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  .inner {
+    padding: 90px 40px 29px 40px;
+    transition: all 0.3s ease;
+    padding-top: 46px;
+    padding-bottom: 35px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    @media #{$md-layout} {
+      padding: 80px 40px 29px 25px;
+    }
+    @media #{$sm-layout} {
+      padding: 80px 40px 29px 25px;
+    }
+    &::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      width: 8px;
+      content: "";
+      background-color: rgba(102, 185, 92, 0.2);
+    }
+    .number {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding-bottom: 22px;
+      margin-bottom: 31px;
+      z-index: 1;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: -100px;
+        height: 8px;
+        background-color: rgba(102, 185, 92, 0.2);
+      }
+      span {
+        color: var(--color-primary);
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 600;
+        font-family: var(--font-primary);
+      }
+    }
+    .title {
+      line-height: 1.4;
+      font-weight: 600;
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    .description {
+      margin-top: 12px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  }
+}

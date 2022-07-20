@@ -1,0 +1,64 @@
+/*==========================
+Progressbar Area 
+============================*/
+
+.progress-bar--1 {
+  .single-progress {
+    position: relative;
+    & + .single-progress {
+      margin-top: 25px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 5px;
+      color: #333;
+      letter-spacing: 0.8px;
+    }
+    .progress {
+      height: 8px;
+      border-radius: 4px;
+      box-shadow: none;
+      background-color: #000000;
+      overflow: visible;
+      .progress-bar {
+        position: relative;
+        color: var(--color-primary);
+        background-color: var(--color-primary);
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          right: -4px;
+          top: 50%;
+          border-radius: 50%;
+          transform: translate(50%, -50%);
+        }
+        &::before {
+          height: 28px;
+          width: 28px;
+          border: 1px solid currentColor;
+          opacity: 0.3;
+        }
+        &::after {
+          height: 13px;
+          width: 13px;
+          border: 3px solid currentColor;
+        }
+      }
+    }
+
+    .label {
+      position: absolute;
+      right: 0;
+      top: -6px;
+      font-weight: 400;
+      color: #999;
+      font-size: 13px;
+      @media #{$sm-layout} {
+        top: -8px;
+      }
+    }
+  }
+}

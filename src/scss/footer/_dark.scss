@@ -1,0 +1,109 @@
+/*------------------------
+    Dark Version  
+-------------------------*/
+
+.active-dark-version {
+  color: #bbb;
+  .bg-color-white {
+    background-color: #000;
+  }
+
+  .bg-color-extra03 {
+    background-color: #111;
+  }
+
+  .bg-color-black {
+    background-color: #111;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: #ffffff;
+  }
+  p {
+    color: #bbb;
+  }
+}
+
+.active-dark-version {
+}
+
+.active-dark-version .section-title .description,
+.active-dark-version .about-style-01 .content ul.myabout-list .list .link,
+.active-dark-version .active-dark-version p,
+.active-dark-version .rn-footer-area .copyright-text {
+  color: #bbb;
+}
+
+.active-dark-version .about-style-01 .content ul.myabout-list .list .label,
+.active-dark-version .breadcrumbs li a,
+.active-dark-version
+  .rn-project-details-area
+  .portfolio-content
+  .content-left
+  ul.list_holder
+  li
+  span.icon,
+.active-dark-version
+  .rn-project-details-area
+  .portfolio-content
+  .content-left
+  h3 {
+  color: #fff;
+}
+
+.active-dark-version .service-style-1 .inner {
+  background-color: #000;
+}
+
+.active-dark-version .progress-bar--1 .single-progress .title,
+.active-dark-version .progress-bar--1 .single-progress .label,
+.active-dark-version .contact-info-list-wrapper .list .label,
+.active-dark-version .tags-cloud a,
+.active-dark-version .tag-list span {
+  color: #bbb;
+}
+
+.active-dark-version
+  .rn-project-details-area
+  .portfolio-content
+  .content-left
+  ul.list_holder
+  li
+  span.projectinfo {
+  color: #bbb;
+}
+
+.active-dark-version .single-timeline .inner,
+.active-dark-version .form-group input,
+.form-group textarea,
+.active-dark-version .tags-cloud a {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.active-dark-version .tags-cloud a:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.active-dark-version .content-block {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.active-dark-version .form-group input,
+.active-dark-version .form-group textarea,
+.active-dark-version .form-group label {
+  background: #000;
+}

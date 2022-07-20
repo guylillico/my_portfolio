@@ -1,0 +1,275 @@
+/*-----------------------
+    Header Scss  
+------------------------*/
+
+.rn-header {
+  &.header-with-sidebar {
+    width: 400px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #111;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    z-index: 100;
+    transition: all 0.3s ease;
+    @media #{$laptop-device} {
+      width: 300px;
+    }
+    .header-inner {
+      width: 100%;
+      height: 100%;
+      clear: both;
+      float: left;
+      .logo {
+        position: relative;
+        z-index: 10;
+        padding: 60px;
+      }
+      .mainmenu-inner {
+        padding: 0px 60px;
+        max-height: 500px;
+        display: flex;
+        align-items: center;
+        overflow-y: auto;
+        margin: 33px 0;
+        min-height: 500px;
+        @media #{$laptop-device} {
+          max-height: 335px;
+          min-height: 335px;
+        }
+        .mainmenu {
+          margin: 0;
+          list-style-type: none;
+          padding: 0;
+          display: block;
+          width: 100%;
+          li {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: block;
+            &::before {
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 2px;
+              background-color: rgba(255, 255, 255, 0.015);
+              left: 0;
+              bottom: 0;
+            }
+            a {
+              &.nav-link {
+                text-decoration: none;
+                color: #ffffff;
+                text-transform: capitalize;
+                display: block;
+                position: relative;
+                padding: 10px 0px;
+                transition: all 0.3s ease;
+                font-size: 16px;
+                font-weight: 400;
+                position: relative;
+                line-height: 21px;
+                letter-spacing: 1px;
+
+                &:last-child {
+                  &::before {
+                    display: none;
+                  }
+                }
+              }
+            }
+
+            &.is-current {
+              .hover-item {
+                span {
+                  &::before {
+                    color: var(--color-primary);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .social-icons {
+      @extend %liststyle;
+      left: 60px;
+      position: absolute;
+      bottom: 60px;
+
+      li {
+        margin: 0 15px 0 0;
+        display: inline-block;
+        a {
+          text-decoration: none;
+          color: #fff;
+          transition: all 0.3s ease;
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+
+  &.header-transparent {
+    left: 0;
+    right: 0;
+    width: auto;
+    z-index: 99;
+    position: fixed;
+    @media #{$lg-layout} {
+      position: static;
+      background: #000;
+    }
+    @media #{$md-layout} {
+      position: static;
+      background: #000;
+    }
+    @media #{$sm-layout} {
+      position: static;
+      background: #000;
+    }
+  }
+}
+
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-default {
+  padding: 0 50px;
+  @media #{$lg-layout} {
+    padding: 0 30px;
+  }
+  @media #{$md-layout} {
+    padding: 0 30px;
+  }
+  @media #{$sm-layout} {
+    padding: 0 30px;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+    @media #{$lg-layout} {
+      min-height: 70px;
+    }
+    @media #{$md-layout} {
+      min-height: 70px;
+    }
+    @media #{$sm-layout} {
+      min-height: 70px;
+    }
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-search {
+    button {
+      background: transparent;
+      padding: 0;
+      border: 0 none;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      outline: none;
+    }
+  }
+}
+
+/* Hambergur Menu  */
+
+.hambergur-menu {
+  cursor: pointer;
+
+  .hamburger-box {
+    width: 30px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    .hamburger-inner,
+    .hamburger-inner::after,
+    .hamburger-inner::before {
+      background-color: #ccc;
+      width: 30px;
+      top: auto;
+      bottom: 0;
+      transition-duration: 0.13s;
+      transition-delay: 0.13s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      height: 2px;
+      position: absolute;
+      transition-property: transform;
+      border-radius: 4px;
+    }
+    .hamburger-inner {
+      &::before,
+      &::after {
+        content: "";
+      }
+      &::before {
+        transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+          transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        top: -7px;
+      }
+      &::after {
+        top: -14px;
+        transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+          opacity 0.1s linear;
+        bottom: -7px;
+      }
+    }
+  }
+
+  &.hambergur-menu-open {
+    .hamburger-box {
+      .hamburger-inner {
+        transform: translate3d(0, -8px, 0) rotate(45deg);
+        transition-delay: 0.22s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .hamburger-inner::before {
+        top: 0;
+        transform: rotate(90deg);
+        transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+          transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .hamburger-inner::after {
+        top: 0;
+        opacity: 0;
+        transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+          opacity 0.1s 0.22s linear;
+      }
+    }
+  }
+}
+
+// Sidebar Menu
+.home-content-wrapper {
+  padding-left: 400px;
+  @media #{$laptop-device} {
+    padding-left: 300px;
+  }
+  @media #{$lg-layout} {
+    padding-left: 0;
+  }
+  @media #{$md-layout} {
+    padding-left: 0;
+  }
+  @media #{$sm-layout} {
+    padding-left: 0;
+  }
+}

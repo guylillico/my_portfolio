@@ -1,0 +1,126 @@
+[
+  {
+    "id": "main-banner",
+    "title": "GUY <span class='color-primary'>LILLICO</span>",
+    "subtitle": "I'm a Freelancer",
+    "bgImage": "./images/banner/bg-image-02.jpg",
+    "image": "./images/banner/person-image.jpg"
+  },
+  {
+    "id": "about",
+    "title": "I'm Albert Walkers and <span class='color-primary'>Freelancer</span>",
+    "description": "Hi! My name is <span class='color-primary'>Albert Walkers</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.",
+    "downloadButton": "Download CV",
+    "linkButton": "Send Message",
+    "aboutData": [
+      {
+        "id": "aboutinfo-1",
+        "iconName": "FiArrowRightCircle",
+        "label": "Birthday",
+        "value": "12.05.1979"
+      },
+      {
+        "id": "aboutinfo-2",
+        "iconName": "icon",
+        "label": "Age",
+        "value": "43"
+      },
+      {
+        "id": "aboutinfo-3",
+        "iconName": "icon",
+        "label": "Location",
+        "value": "Perth, Western Australia"
+      },
+      {
+        "id": "aboutinfo-3",
+        "iconName": "icon",
+        "label": "Interests",
+        "value": "Music, Fishing"
+      },
+      {
+        "id": "aboutinfo-3",
+        "iconName": "icon",
+        "label": "Study",
+        "value": "Murdoch University"
+      },
+      {
+        "id": "aboutinfo-4",
+        "iconName": "icon",
+        "label": "Degree",
+        "value": "B.MMedia"
+      },
+      {
+        "id": "aboutinfo-5",
+        "iconName": "icon",
+        "label": "Mail",
+        "value": "guylillico@gmail.com"
+      },
+      {
+        "id": "aboutinfo-6",
+        "iconName": "icon",
+        "label": "Phone",
+        "value": "+61 415 633 079"
+      }
+    ]
+  },
+  {
+    "id": "skill",
+    "title": "In a <span class='theme-color'>short time</span>, I have been able to achieve excellence in all areas of development.",
+    "description": "I provide cost-effective and high quality products to meet our Clients' needs of timely delivery World Wide. I want to be local in a global world to be where our Customers need our services customers need our services."
+  },
+  {
+    "id": "portfolio",
+    "subtitle": "PORTFOLIO",
+    "title": "FEATURED WORKS",
+    "description": "In other words, the best marketing decision you can make is to have a product or business that fulfills a real and compelling need for a real and defined group of people — no matter how much tweaking and refining this takes.(c)"
+  },
+  {
+    "id": "chooseus",
+    "imagegroup": [
+      {
+        "image": "./images/others/why-1.jpg"
+      },
+      {
+        "image": "./images/others/why-2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "skillTwo",
+    "title": "My Skills in <span class='theme-color'>Years</span>",
+    "description": "When the past gets its teeth into our daily life, it may get to grips with an astringent reality and adjust our timeline. By recognizing ourselves in the light of our history, we become aware of what we are.(c)"
+  },
+  {
+    "id": "testimonial",
+    "title": "Steve Lehman",
+    "subtitle": "Freelancer",
+    "description": "Really the Code, Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends. Great template, even better service!",
+    "bgImage": "./images/banner/bg-image-03.jpg"
+  },
+  {
+    "id": "brand",
+    "brandGroup": [
+      {
+        "id": "brand-01",
+        "image": "./images/brand/1.png"
+      },
+      {
+        "id": "brand-02",
+        "image": "./images/brand/2.png"
+      },
+      {
+        "id": "brand-03",
+        "image": "./images/brand/3.png"
+      },
+      {
+        "id": "brand-04",
+        "image": "./images/brand/4.png"
+      }
+    ]
+  },
+  {
+    "id": "contactus",
+    "title": "GET IN TOUCH",
+    "subtitle": "CONTACT"
+  }
+]
