@@ -1,15 +1,15 @@
 [
   {
     "id": "main-banner",
-    "title": "GUY <span class='color-primary'>LILLICO</span>",
+    "title": "Guy <span class='color-primary'>Lillico</span>",
     "subtitle": "I'm a Freelancer",
     "bgImage": "./images/banner/bg-image-06.jpg",
     "image": "./images/banner/person-image.jpg"
   },
   {
     "id": "about",
-    "title": "I'm Albert Walkers and <span class='color-primary'>Freelancer</span>",
-    "description": "Hi! My name is <span class='color-primary'>Albert Walkers</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.",
+    "title": "A <span class='color-primary'>Front End Developer</span> and <span class='color-primary'>UI Designer</span> from Perth, Western Australia.",
+    "description": "I enjoy creating outstanding digital solutions for my clients, whether that be in the form of a web/mobile application or website. With 14+ years of industry experience, I have a passion for UI design and delivering performant, compelling and intuitive user experiences.",
     "downloadButton": "Download CV",
     "linkButton": "Send Message",
     "aboutData": [

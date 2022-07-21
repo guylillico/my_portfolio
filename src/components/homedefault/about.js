@@ -8,37 +8,36 @@ import {
   FiMapPin,
   FiPhoneIncoming,
 } from "react-icons/fi"
-
 const infoList = [
   {
+    id: "1",
+    icon: <FiMail />,
+    label: "Email:",
+    link: "guylillico@gmail.com",
+  },
+  {
     id: "2",
+    icon: <FiPhoneIncoming />,
+    label: "Phone:",
+    link: "+61 415 633 079",
+  },
+  {
+    id: "3",
     icon: <FiMapPin />,
     label: "Location:",
     link: "Perth, Western Australia",
   },
   {
-    id: "3",
+    id: "4",
     icon: <FiBookOpen />,
     label: "University:",
     link: "Murdoch University",
   },
   {
-    id: "4",
+    id: "5",
     icon: <FiBook />,
     label: "Degree:",
     link: "B.MMedia",
-  },
-  {
-    id: "4",
-    icon: <FiMail />,
-    label: "Mail:",
-    link: "guylillico@gmail.com",
-  },
-  {
-    id: "4",
-    icon: <FiPhoneIncoming />,
-    label: "Phone:",
-    link: "+61 415 633 079",
   },
 ]
 
@@ -129,12 +128,16 @@ const About = () => {
                 )}
                 <div className="button-group mt--20">
                   {downloadButton && (
-                    <a className="rn-button" href="#downloadbutton">
+                    <a
+                      className="rn-button"
+                      target="_blank"
+                      href="/docs/guy-lillico-cv-july-2022.pdf"
+                    >
                       <span>{downloadButton}</span>
                     </a>
                   )}
                   {linkButton && (
-                    <a className="rn-button" href="#linkbutton">
+                    <a className="rn-button" href="mailto:guylillico@gmail.com">
                       <span>{linkButton}</span>
                     </a>
                   )}
