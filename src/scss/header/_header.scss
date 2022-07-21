@@ -3,6 +3,11 @@
 ------------------------*/
 
 .rn-header {
+  .logo {
+    img {
+      height: 32px;
+    }
+  }
   &.header-with-sidebar {
     width: 400px;
     position: fixed;
@@ -24,7 +29,10 @@
       .logo {
         position: relative;
         z-index: 10;
-        padding: 60px;
+        padding: 60px 80px 60px 60px;
+        img {
+          height: 42px;
+        }
       }
       .mainmenu-inner {
         padding: 0px 60px;

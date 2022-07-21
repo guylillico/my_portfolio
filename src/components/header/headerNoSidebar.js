@@ -1,8 +1,8 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import React, { Fragment, useEffect, useState } from "react"
 import Scrollspy from "react-scrollspy"
+import Logo from "../../assets/images/logo/guy-lillico-logo.svg"
 
 // Start Header Area
 const HeaderNoSidebar = () => {
@@ -12,11 +12,6 @@ const HeaderNoSidebar = () => {
         nodes {
           title
           path
-        }
-      }
-      file(relativePath: { eq: "images/logo/logo.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FIXED)
         }
       }
     }
@@ -43,7 +38,6 @@ const HeaderNoSidebar = () => {
       .querySelector(".hambergur-menu")
       .classList.toggle("hambergur-menu-open")
   }
-  const siteLogo = headerQuerySidebar.file.childImageSharp.gatsbyImageData
 
   return (
     <Fragment>
@@ -53,7 +47,7 @@ const HeaderNoSidebar = () => {
           <div className="header-left">
             <div className="logo">
               <Link to="/">
-                <GatsbyImage image={siteLogo} alt="" />
+                <img src={Logo} alt="Guy Lillico" />
               </Link>
             </div>
           </div>
