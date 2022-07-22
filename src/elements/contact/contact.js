@@ -19,7 +19,7 @@ const infoList = [
     id: "3",
     icon: <FiLinkedin />,
     label: "LinkedIn:",
-    text: "https://www.linkedin.com/in/guylillico/",
+    text: "linkedin.com/in/guylillico/",
     link: "https://www.linkedin.com/in/guylillico/",
   },
 ]
@@ -79,7 +79,12 @@ const Contact = () => {
                   {value.text && (
                     <>
                       {value.link ? (
-                        <a className="link" href={value.link}>
+                        <a
+                          className="link"
+                          rel="noreferrer noopener"
+                          target="_blank"
+                          href={value.link}
+                        >
                           {value.text}
                         </a>
                       ) : (

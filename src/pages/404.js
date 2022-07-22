@@ -14,7 +14,7 @@ const NotFoundPage = () => (
               <h2>Page Not Found</h2>
               <p>
                 Sorry, but the page you are looking for was moved, removed,
-                renamed or might never existed...
+                renamed or may have never existed...
               </p>
               <a className="rn-button" href="/">
                 Go Back

@@ -4,7 +4,7 @@ import About from "../components/homedefault/about"
 import Banner from "../components/homedefault/banner"
 import Project from "../components/homedefault/project"
 import Service from "../components/homedefault/service"
-// import Testimonial from "../components/homedefault/testimonial"
+import Testimonial from "../components/homedefault/testimonial"
 // import Timeline from "../components/homedefault/timeline"
 import Layout from "../components/layout"
 import SeoComponent from "../components/seo"
@@ -18,7 +18,7 @@ const IndexPage = () => (
     <Service />
     <div id="portfolio">
       <Project />
-      {/* <Testimonial /> */}
+      <Testimonial />
     </div>
     {/* <Timeline /> */}
     {/* <BlogPost /> */}

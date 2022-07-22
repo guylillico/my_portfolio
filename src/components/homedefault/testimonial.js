@@ -38,8 +38,13 @@ const Testimonial = () => {
                   <div className="icon">
                     <FaQuoteLeft />
                   </div>
-                  <p className="description">{description}</p>
-                  <div className="info">
+                  <div
+                    className="description"
+                    dangerouslySetInnerHTML={{
+                      __html: description,
+                    }}
+                  />
+                  <div className="info" style={{ marginTop: "30px" }}>
                     <h4 className="title">{title}</h4>
                     <span className="subtitle">{subtitle}</span>
                   </div>

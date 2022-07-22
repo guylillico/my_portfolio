@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 import {
@@ -13,31 +13,31 @@ const infoList = [
     id: "1",
     icon: <FiMail />,
     label: "Email:",
-    link: "guylillico@gmail.com",
+    text: "guylillico@gmail.com",
   },
   {
     id: "2",
     icon: <FiPhoneIncoming />,
     label: "Phone:",
-    link: "+61 415 633 079",
+    text: "+61 415 633 079",
   },
   {
     id: "3",
     icon: <FiMapPin />,
     label: "Location:",
-    link: "Perth, Western Australia",
+    text: "Perth, Western Australia",
   },
   {
     id: "4",
     icon: <FiBookOpen />,
     label: "University:",
-    link: "Murdoch University",
+    text: "Murdoch University",
   },
   {
     id: "5",
     icon: <FiBook />,
     label: "Degree:",
-    link: "B.MMedia",
+    text: "B.MMedia",
   },
 ]
 
@@ -119,9 +119,7 @@ const About = () => {
                       <div className="list" key={index}>
                         <div className="icon">{value.icon}</div>
                         <span className="label">{value.label}</span>
-                        <a className="link" href="#labelvalue">
-                          {value.link}
-                        </a>
+                        <span className="link">{value.text}</span>
                       </div>
                     ))}
                   </ul>
@@ -131,15 +129,16 @@ const About = () => {
                     <a
                       className="rn-button"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="/docs/guy-lillico-cv-july-2022.pdf"
                     >
                       <span>{downloadButton}</span>
                     </a>
                   )}
                   {linkButton && (
-                    <a className="rn-button" href="mailto:guylillico@gmail.com">
+                    <Link className="rn-button" href="/#contact">
                       <span>{linkButton}</span>
-                    </a>
+                    </Link>
                   )}
                 </div>
               </div>

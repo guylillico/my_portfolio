@@ -92,9 +92,9 @@
   },
   {
     "id": "testimonial",
-    "title": "Steve Lehman",
-    "subtitle": "Freelancer",
-    "description": "Really the Code, Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends. Great template, even better service!",
+    "title": "Scott Lawrence",
+    "subtitle": "CTO - WINR",
+    "description": "<p>I've had the pleasure of working with Guy for the past four years and highly recommend him as both a skilled full-stack developer and a great person to have in a tech team.</p><p>Guy handled all aspects of the WINR front-end products - this included designing and developing our marketing sites, our consumer sites and the WINR AdGate product.</p><p>The latter was a custom JavaScript product that enabled publishers to obfuscate content on their sites - until the consumer engaged with the advertising within the AdGate. Guy handled all aspects of the architecture and implementation of the product, ensuring it worked correctly on all mobile & desktop environments and creating the initial AWS Lambda (Serverless) backend to control the display of ads and recording of user sessions and statistics.</p><p>As the product matured, Guy adapted the technology to work with commercial ad platforms (Xandr/AppNexus and Kevel/Adzerk), integrated the product to work within the Header Bidding ecosystem and developed a front-end for our AdOps teams to mange advertising campaigns and publishers.</p><p>On the backend, Guy introduced the (NodeJS-based) serverless platform into the company, and integrated it with our AWS API Gateway/Bitbucket/CircleCI CI/CD environment.</p><p>Guy manages his time extremely well (especially given that the majority of his time was working remotely across the country) and consistently delivers his projects on or ahead of time.</p><p>Guy will be a great asset to any company.</p>",
     "bgImage": "./images/banner/bg-image-03.jpg"
   },
   {
