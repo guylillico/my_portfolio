@@ -1,5 +1,5 @@
-import React, { useState } from "react"
 import axios from "axios"
+import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 
 const ContactForm = ({ url }) => {
@@ -43,7 +43,11 @@ const ContactForm = ({ url }) => {
       data,
     })
       .then(res => {
-        handleServerResponse(true, "Thanks! for being with us", form)
+        handleServerResponse(
+          true,
+          "Thanks for getting in touch. I will respond to you as soon as I can.",
+          form
+        )
       })
       .catch(err => {
         handleServerResponse(false, err.response.data.error, form)
@@ -131,7 +135,7 @@ const ContactForm = ({ url }) => {
             minLength: { value: 10, message: "Minimum length is 10" },
           })}
         ></textarea>
-        <label htmlFor="message">Write your message here.</label>
+        <label htmlFor="message">Your message here.</label>
         {errors.message && (
           <span className="error">{errors.message.message}</span>
         )}

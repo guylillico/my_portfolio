@@ -1,10 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import {
-  FiGlobe,
-  FiLinkedin, FiMapPin,
-  FiPhone
-} from "react-icons/fi"
+import { FiGlobe, FiLinkedin, FiMapPin, FiPhone } from "react-icons/fi"
 import Contactform from "./contactform"
 const infoList = [
   {
@@ -30,7 +26,7 @@ const infoList = [
     icon: <FiLinkedin />,
     label: "LinkedIn:",
     link: "https://www.linkedin.com/in/guylillico/",
-  }
+  },
 ]
 
 const Contact = () => {
@@ -66,8 +62,7 @@ const Contact = () => {
                 dangerouslySetInnerHTML={{ __html: Title }}
               ></h2>
               <p className="description mt--75 mt_sm--30 mt_md--30">
-                Please fill out the form below to get in contact with
-                me.
+                Please fill out the form below to get in contact with me.
               </p>
             </div>
           </div>
@@ -100,36 +95,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-//   {
-//       "id": "2",
-//       "icon": <FiPhone />,
-//       "label": "Phone:",
-//       "link": "+77 022 177 05 05"
-//   },
-//   {
-//       "id": "3",
-//       "icon": <FiGlobe />,
-//       "label": "Website:",
-//       "link": "rainbow-themes.com"
-//   },
-//           {
-//       "id": "4",
-//       "icon": <FiFacebook />,
-//       "label": "Facebook:",
-//       "link": "@rainbowFacebook"
-//   },
-//   {
-//       "id": "4",
-//       "icon": <FiInstagram />,
-//       "label": "Instagram:",
-//       "link": "@rainbowInstagram"
-//   },
-//   {
-//       "id": "4",
-//       "icon": <FiPhoneIncoming />,
-//       "label": "Whatsapp:",
-//       "link": "@rainbowWhatsapp"
-//   },
-
-// Or call <br /> between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
