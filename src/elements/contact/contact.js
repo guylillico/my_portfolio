@@ -1,30 +1,25 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { FiGlobe, FiLinkedin, FiMapPin, FiPhone } from "react-icons/fi"
+import { FiLinkedin, FiMapPin, FiPhone } from "react-icons/fi"
 import Contactform from "./contactform"
 const infoList = [
   {
     id: "1",
     icon: <FiMapPin />,
     label: "Location:",
-    link: "Perth, Western Australia",
+    text: "Perth, Western Australia",
   },
   {
     id: "2",
     icon: <FiPhone />,
     label: "Phone:",
-    link: "+61 415 633 079",
+    text: "+61 415 633 079",
   },
   {
     id: "3",
-    icon: <FiGlobe />,
-    label: "Website:",
-    link: "guylillico.dev",
-  },
-  {
-    id: "4",
     icon: <FiLinkedin />,
     label: "LinkedIn:",
+    text: "https://www.linkedin.com/in/guylillico/",
     link: "https://www.linkedin.com/in/guylillico/",
   },
 ]
@@ -81,9 +76,17 @@ const Contact = () => {
                 <div className="list" key={index}>
                   <div className="icon">{value.icon}</div>
                   <span className="label">{value.label}</span>
-                  <a className="link" href="#labelvalue">
-                    {value.link}
-                  </a>
+                  {value.text && (
+                    <>
+                      {value.link ? (
+                        <a className="link" href={value.link}>
+                          {value.text}
+                        </a>
+                      ) : (
+                        <span>{value.text}</span>
+                      )}
+                    </>
+                  )}
                 </div>
               ))}
             </div>

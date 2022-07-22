@@ -72,10 +72,10 @@ const ContactForm = ({ url }) => {
           id="name"
           onChange={onChangeHandler}
           ref={register({
-            required: "Full Name Required",
+            required: "Name required",
           })}
         />
-        <label htmlFor="name">Full Name</label>
+        <label htmlFor="name">Your name</label>
         {errors.name && <span className="error">{errors.name.message}</span>}
       </div>
 
@@ -90,14 +90,14 @@ const ContactForm = ({ url }) => {
           id="email"
           onChange={onChangeHandler}
           ref={register({
-            required: "Email Required",
+            required: "Email required",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-              message: "invalid email address",
+              message: "Invalid email address",
             },
           })}
         />
-        <label htmlFor="email">Enter Your Email</label>
+        <label htmlFor="email">Your email</label>
         {errors.email && <span className="error">{errors.email.message}</span>}
       </div>
 
@@ -112,7 +112,7 @@ const ContactForm = ({ url }) => {
           id="subject"
           onChange={onChangeHandler}
           ref={register({
-            required: "Subject Required",
+            required: "Subject required",
           })}
         />
         <label htmlFor="subject">Subject</label>
@@ -131,8 +131,11 @@ const ContactForm = ({ url }) => {
           id="message"
           onChange={onChangeHandler}
           ref={register({
-            required: "Message Required",
-            minLength: { value: 10, message: "Minimum length is 10" },
+            required: "Message required",
+            minLength: {
+              value: 10,
+              message: "Minimum length is 10 characters",
+            },
           })}
         ></textarea>
         <label htmlFor="message">Your message here.</label>
